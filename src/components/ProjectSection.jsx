@@ -8,7 +8,7 @@ const projects = [
     description: "An intuitive web app designed to help teachers efficiently plan and organize their lessons with ease.",
     video: "/videos/lessonplanner.webm", 
     tags: ["HTML/CSS", "Boostrap", "JavaScript"],
-    demoUrl: "https://arslan-akram123.github.io/The-Lesson-Planner/",
+    demoUrl: "https://the-lesson-planner.vercel.app/",
     githubUrl: "https://arslan-akram123.github.io/The-Lesson-Planner/",
   },
   {
@@ -27,7 +27,7 @@ const projects = [
       " A feature-rich weather dashboard providing real-time weather, live alerts, an interactive calendar, and upcoming sports events for any city, all wrapped in a fully responsive design.",
     image: "/images/project3.png",
     tags: ["React", "Tailwind", "Weather-API"],
-    demoUrl: "https://global-forecast-atlas.vercel.app/",
+    demoUrl: "https://weather-forecast-app-coral-kappa.vercel.app/",
     githubUrl: "https://github.com/Arslan-Akram123/weather-forecast-app/",
   },
 ];

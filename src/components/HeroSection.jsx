@@ -21,8 +21,7 @@ const HeroSection = () => {
                     </h1>
 
                     <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                        Passionate Full-Stack Developer with expertise in the MERN (MongoDB, Express.js, React, Node.js) ecosystem. I leverage my strong background in crafting responsive, user-focused front-ends to now build complete, high-performance web applications. I am skilled in designing RESTful APIs, managing database architecture, and deploying secure systems, ensuring technical precision and strong UX delivery from concept to deployment.
-                       
+                        I am a dedicated Full-Stack Developer with a strong foundation in the MERN stack (MongoDB, Express.js, React, Node.js) and proficiency in modern frontend frameworks like Next.js and Tailwind CSS. With expertise in backend technologies such as Python and MySQL, I excel in building scalable, secure, and high-performance web applications. My skill set extends to tools like Git/GitHub, Postman, and Vercel, enabling efficient development workflows and seamless deployment. Passionate about delivering user-centric solutions, I combine technical precision with creative problem-solving to craft exceptional digital experiences.
                     </p>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">

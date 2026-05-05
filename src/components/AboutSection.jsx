@@ -36,8 +36,8 @@ const AboutSection = () => {
               </a>
 
               <a
-                href="public/resume/Arslan-Akram-cv.pdf" // The path to your resume in the public folder
-                download="Arslan-Akram-cv.pdf" // The filename user will see when downloading
+                href="public/resume/Arslan-Resume.pdf" // The path to your resume in the public folder
+                download="Arslan-Resume.pdf" // The filename user will see when downloading
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download Resume
