@@ -1,7 +1,5 @@
 # Muhammad Arslan's Personal Portfolio
 
-[![Vercel Deployment](https://vercel.com/button)](https://your-live-url.vercel.app/)
-
 A dynamic and fully responsive personal portfolio built with React, Vite, and Tailwind CSS. This project showcases my skills in front-end development through a clean UI, interactive animations, a dual-theme system, and a functional contact form.
 
 ### [Live Demo](https://your-live-url.vercel.app/)
