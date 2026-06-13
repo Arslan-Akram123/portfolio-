@@ -1,122 +1,113 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { motion } from "framer-motion";
+import { Github, ExternalLink, ArrowUpRight } from "lucide-react";
 
 const projects = [
-
   {
     id: 1,
-    title: "Lesson planner",
-    description: "An intuitive web app designed to help teachers efficiently plan and organize their lessons with ease.",
+    title: "Modern Lesson Planner",
+    description: "Streamlining educational workflows with intuitive scheduling and dynamic resource management.",
     video: "/videos/lessonplanner.webm", 
-    tags: ["HTML/CSS", "Boostrap", "JavaScript"],
+    tags: ["React", "JavaScript", "UI Design"],
     demoUrl: "https://the-lesson-planner.vercel.app/",
     githubUrl: "https://arslan-akram123.github.io/The-Lesson-Planner/",
+    highlight: "Featured"
   },
   {
     id: 2,
-    title: "  Battle Arena Game",
-    description: "Ready for the ultimate superhero showdown? Check out my new game: Card Battle Arena!",
+    title: "Battle Arena",
+    description: "A fast-paced card battle system built with vanilla JavaScript and advanced DOM manipulation.",
     video: "/videos/project2.mp4",
-    tags: ["HTML/CSS", "Bootstrap", "JS"],
+    tags: ["JavaScript", "Gaming", "Animations"],
     demoUrl: "https://battle-team-arena.vercel.app/",
-    githubUrl: " https://arslan-akram123.github.io/Battle-Arena/",
+    githubUrl: "https://arslan-akram123.github.io/Battle-Arena/",
   },
   {
-      id: 3,
-    title: "Global Forecast Atlas",
-    description:
-      " A feature-rich weather dashboard providing real-time weather, live alerts, an interactive calendar, and upcoming sports events for any city, all wrapped in a fully responsive design.",
+    id: 3,
+    title: "Forecast Atlas",
+    description: "Real-time global weather tracker with sophisticated data visualization and geolocation.",
     image: "/images/project3.png",
-    tags: ["React", "Tailwind", "Weather-API"],
+    tags: ["React", "API", "Tailwind"],
     demoUrl: "https://weather-forecast-app-coral-kappa.vercel.app/",
     githubUrl: "https://github.com/Arslan-Akram123/weather-forecast-app/",
+  },
+  {
+    id: 4,
+    title: "Foodies",
+    description: "A comprehensive MERN stack food delivery platform featuring real-time tracking and secure checkout.",
+    video: "/videos/foodies.webm", 
+    tags: ["MERN", "Tailwind", "Full Stack"],
+    demoUrl: "https://foodies-mern.vercel.app/",
+    githubUrl: "https://github.com/Arslan-Akram123/foodies-mern",
   },
 ];
 
 const ProjectSection = () => {
   return (
-    <section id="projects" className="py-24 px-4 relative">
-      <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Featured <span className="text-primary"> Projects </span>
-        </h2>
-
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <div
-              key={project.id}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
-            >
-              <div className="h-50 overflow-hidden">
-             
-                {project.video ? (
-                  <video
-                    src={project.video}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  >
-                    Your browser does not support the video tag.
-                  </video>
-                ) : (
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                )}
-              </div>
-
-              <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag, key) => (
-                    <span key={key} className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
-                <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  {project.description}
-                </p>
-                <div className="flex justify-between items-center">
-                  <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <Github size={20} />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
+    <section id="projects" className="py-24 px-6 relative">
+      <div className="container mx-auto max-w-6xl">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+          <div className="max-w-xl">
+            <h2 className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-4">Case Studies</h2>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tight">Recent Projects</h3>
+          </div>
+          <p className="text-muted-foreground max-w-sm">
+            Focusing on clean code, polished UI, and meaningful user interactions.
+          </p>
         </div>
 
-        <div className="text-center mt-12">
-          <a
-            className="cosmic-button w-fit flex items-center mx-auto gap-2"
-            target="_blank"
-            href="https://github.com/Arslan-Akram123"
-          >
-            Check My Github <ArrowRight size={16} />
-          </a>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {projects.map((project, index) => (
+            <motion.div
+              key={project.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="group relative"
+            >
+              <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-muted">
+                {project.video ? (
+                  <video 
+                    src={project.video} 
+                    autoPlay loop muted playsInline 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                  />
+                ) : (
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                  />
+                )}
+                
+                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                  <a href={project.demoUrl} target="_blank" className="p-3 rounded-full bg-white text-black hover:scale-110 transition-transform">
+                    <ExternalLink size={20} />
+                  </a>
+                  <a href={project.githubUrl} target="_blank" className="p-3 rounded-full bg-white/20 text-white backdrop-blur-md hover:scale-110 transition-transform">
+                    <Github size={20} />
+                  </a>
+                </div>
+              </div>
+
+              <div className="mt-6 flex justify-between items-start">
+                <div>
+                  <div className="flex gap-2 mb-3">
+                    {project.tags.map(tag => (
+                      <span key={tag} className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground px-2 py-1 bg-muted rounded">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <h4 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">{project.title}</h4>
+                  <p className="text-muted-foreground font-light leading-relaxed">{project.description}</p>
+                </div>
+                <div className="p-2 rounded-full border border-border group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                  <ArrowUpRight size={20} />
+                </div>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

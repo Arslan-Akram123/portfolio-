@@ -1,57 +1,62 @@
-import { ArrowUp, Github, Instagram, Linkedin,  } from 'lucide-react'; 
+import { ArrowUp, Github, Linkedin, Mail } from 'lucide-react'; 
 
 const Footer = () => {
   return (
-    <footer className='bg-card border-t border-border px-4 pt-12 text-muted-foreground'>
-      <div className="container mx-auto">
+    <footer className='bg-primary/5 border-t border-white/5 px-4 pt-20 pb-10 text-muted-foreground'>
+      <div className="container mx-auto max-w-6xl">
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 mb-8 text-center md:text-center">
+        <div className="flex flex-col md:flex-row justify-between items-start gap-16 mb-20">
           
-          <div className="space-y-2">
-            <h3 className="text-xl font-bold text-foreground text-left">Muhammad Arslan</h3>
-            <p className="text-sm text-left">
-              Crafting digital experiences, one line of code at a time. Thank you for visiting!
+          <div className="max-w-sm">
+            <h3 className="text-2xl font-black text-foreground mb-4 uppercase tracking-tighter">
+              Arslan<span className="text-primary">.</span>
+            </h3>
+            <p className="text-sm font-light leading-relaxed mb-6">
+              A dedicated Full-Stack Engineer focused on building robust, scalable digital products and exceptional user experiences.
             </p>
+            <div className="flex gap-4">
+              <a href="https://github.com/Arslan-Akram123" target="_blank" className="p-3 rounded-xl bg-white/5 hover:bg-primary/10 hover:text-primary transition-all">
+                <Github size={20} />
+              </a>
+              <a href="https://www.linkedin.com/in/muhammadarslanakram/" target="_blank" className="p-3 rounded-xl bg-white/5 hover:bg-primary/10 hover:text-primary transition-all">
+                <Linkedin size={20} />
+              </a>
+              <a href="mailto:arslanakram7866@gmail.com" className="p-3 rounded-xl bg-white/5 hover:bg-primary/10 hover:text-primary transition-all">
+                <Mail size={20} />
+              </a>
+            </div>
           </div>
 
-          <div className="space-y-3">
-            <h4 className="text-lg font-semibold text-foreground">Quick Links</h4>
-            <ul className="space-y-1 text-sm">
-              <li><a href="#about" className="hover:text-primary transition-colors">About</a></li>
-              <li><a href="#skills" className="hover:text-primary transition-colors">Skills</a></li>
-              <li><a href="#projects" className="hover:text-primary transition-colors">Projects</a></li>
-              <li><a href="#contact" className="hover:text-primary transition-colors">Contact</a></li>
-            </ul>
-          </div>
-
-          {/* Column 3: Social Media Links */}
-          <div className="space-y-3">
-            <h4 className="text-lg font-semibold text-foreground">Connect With Me</h4>
-            <div className="flex justify-center md:justify-center space-x-4">
-              <a href="https://github.com/Arslan-Akram123" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-primary transition-colors">
-                <Github size={22} />
-              </a>
-              <a href="https://www.linkedin.com/in/mdarslan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-primary transition-colors">
-                <Linkedin size={22} />
-              </a>
-              {/* <a href="https://instagram.com//Muhammad Arslan 1659/" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-primary transition-colors">
-                <Instagram size={22} />
-              </a> */}
+          <div className="grid grid-cols-2 gap-12 sm:gap-24">
+            <div className="space-y-4">
+              <h4 className="text-xs uppercase tracking-[0.2em] font-black text-foreground">Navigation</h4>
+              <ul className="space-y-2 text-sm font-light">
+                <li><a href="#hero" className="hover:text-primary transition-colors">Home</a></li>
+                <li><a href="#about" className="hover:text-primary transition-colors">About</a></li>
+                <li><a href="#projects" className="hover:text-primary transition-colors">Projects</a></li>
+                <li><a href="#contact" className="hover:text-primary transition-colors">Contact</a></li>
+              </ul>
+            </div>
+            <div className="space-y-4">
+              <h4 className="text-xs uppercase tracking-[0.2em] font-black text-foreground">Legal</h4>
+              <ul className="space-y-2 text-sm font-light">
+                <li><span className="opacity-50">Privacy Policy</span></li>
+                <li><span className="opacity-50">Terms of Service</span></li>
+              </ul>
             </div>
           </div>
 
         </div>
 
-        <div className="border-t border-border py-6 flex flex-col-reverse sm:flex-row justify-between items-center gap-4">
-          <p className='text-sm text-center'>
-            &copy; {new Date().getFullYear()} Muhammad Arslan. All rights reserved.
+        <div className="pt-10 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-6">
+          <p className='text-xs font-light tracking-wider uppercase opacity-50'>
+            &copy; {new Date().getFullYear()} Muhammad Arslan &mdash; Built with React & Tailwind
           </p>
           <a 
             href="#hero" 
-            aria-label="Scroll to top"
-            className='p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-all duration-300 hover:-translate-y-1'
+            className='group flex items-center gap-3 text-xs uppercase tracking-[0.3em] font-black text-foreground'
           >
-            <ArrowUp size={20}/>
+            Back to Top <div className="p-2 rounded-full bg-white/5 group-hover:bg-primary group-hover:text-white transition-all"><ArrowUp size={14}/></div>
           </a>
         </div>
 
