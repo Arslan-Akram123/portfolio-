@@ -22,9 +22,6 @@ const skills = [
   // Tools
   { name: "Git/GitHub", level: 90, category: "tools" },
   { name: "Postman", level: 60, category: "tools" },
-  { name: "ChatGPT", level: 85, category: "tools" },
-  { name: "Google AI Studio", level: 85, category: "tools" },
-  { name: "DeepSeek", level: 75, category: "tools" },
   { name: "VS Code", level: 95, category: "tools" },
   {name:"Vercel", level:80, category:"tools"},
 ];
