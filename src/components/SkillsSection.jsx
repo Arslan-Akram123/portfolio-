@@ -16,13 +16,11 @@ const skills = [
   { name: "Express", category: "backend" },
   { name: "Python", category: "backend" },
   { name: "MongoDB", category: "backend" },
-  { name: "PostgreSQL", category: "backend" },
+  { name: "SQL", category: "backend" },
   
   // Tools
   { name: "Git/GitHub", category: "tools" },
-  { name: "Docker", category: "tools" },
-  { name: "AWS", category: "tools" },
-  { name: "Vercel", category: "tools" },
+ { name: "Vercel", category: "tools" },
   { name: "Postman", category: "tools" },
 ];
 
