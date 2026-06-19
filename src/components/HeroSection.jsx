@@ -49,7 +49,7 @@ const HeroSection = () => {
                         <a href="#projects" className="btn-primary flex items-center gap-2">
                             Latest Projects <ArrowRight size={18} />
                         </a>
-                        <a href="/resume/resume.pdf" download className="btn-outline flex items-center gap-2">
+                        <a href="/resume/Arslan.pdf" download className="btn-outline flex items-center gap-2">
                             Download CV <Download size={18} />
                         </a>
                     </motion.div>
