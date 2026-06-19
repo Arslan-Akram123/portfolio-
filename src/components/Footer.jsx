@@ -18,10 +18,10 @@ const Footer = () => {
               <a href="https://github.com/Arslan-Akram123" target="_blank" className="p-3 rounded-xl bg-white/5 hover:bg-primary/10 hover:text-primary transition-all">
                 <Github size={20} />
               </a>
-              <a href="https://www.linkedin.com/in/muhammadarslanakram/" target="_blank" className="p-3 rounded-xl bg-white/5 hover:bg-primary/10 hover:text-primary transition-all">
+              <a href="https://www.linkedin.com/in/mdarslan/" target="_blank" className="p-3 rounded-xl bg-white/5 hover:bg-primary/10 hover:text-primary transition-all">
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:arslanakram7866@gmail.com" className="p-3 rounded-xl bg-white/5 hover:bg-primary/10 hover:text-primary transition-all">
+              <a href="mailto:marslan.devtech@gmail.com" className="p-3 rounded-xl bg-white/5 hover:bg-primary/10 hover:text-primary transition-all">
                 <Mail size={20} />
               </a>
             </div>

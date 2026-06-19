@@ -57,7 +57,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 px-6 relative bg-muted/30 overflow-hidden">
+    <section id="contact" className="py-24 px-2  sm:px-6 relative bg-muted/30 overflow-hidden">
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           
@@ -85,9 +85,9 @@ const ContactSection = () => {
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all">
                   <Mail size={20} />
                 </div>
-                <div>
+                <div className="flex flex-col items-start gap-1 ">
                   <p className="text-[10px] uppercase tracking-widest font-bold text-muted-foreground">Email</p>
-                  <a href="mailto:arslanakramsoftwareengineer@gmail.com" className="text-lg font-bold">arslanakramsoftwareengineer@gmail.com</a>
+                  <a href="mailto:marslan.devtech@gmail.com" className="sm:text-lg sm:font-bold text-sm wrap-break-word">marslan.devtech@gmail.com</a>
                 </div>
               </div>
 
@@ -95,9 +95,9 @@ const ContactSection = () => {
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-primary-foreground transition-all">
                   <MapPin size={20} />
                 </div>
-                <div>
+                <div className="flex flex-col items-start gap-1 overflow-hidden">
                   <p className="text-[10px] uppercase tracking-widest font-bold text-muted-foreground">Location</p>
-                  <p className="text-lg font-bold">Punjab, Pakistan</p>
+                  <p className="sm:text-lg sm:font-bold text-sm wrap-break-word ">Punjab, Pakistan</p>
                 </div>
               </div>
             </div>
@@ -105,7 +105,7 @@ const ContactSection = () => {
             <div className="flex gap-4">
               {[
                 { icon: <Github size={20} />, link: "https://github.com/Arslan-Akram123" },
-                { icon: <Linkedin size={20} />, link: "https://www.linkedin.com/in/muhammadarslanakram/" }
+                { icon: <Linkedin size={20} />, link: "https://www.linkedin.com/in/mdarslan/" }
               ].map((social, i) => (
                 <a 
                   key={i}
